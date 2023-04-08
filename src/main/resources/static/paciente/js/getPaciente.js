@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
         .then(response => response.json())
         .then(data => {
             for(paciente of data){
+                console.log(paciente);
                 var table = document.getElementById('pacienteDatos');
                 var pacienteRow =  table.insertRow();
                 let tr_id = 'tr_' + paciente.id;

@@ -15,6 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class DomicilioServiceImplTest {
 
+    //EJECUTAR LOS TEST DE MANERA MANUAL Y EN ORDEN
+
     @Autowired
     private IDomicilioService domicilioService;
 

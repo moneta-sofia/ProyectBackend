@@ -18,12 +18,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TurnoServiceImplTest {
+
+    //EJECUTAR LOS TEST DE MANERA MANUAL Y EN ORDEN
 
     @Autowired
     private ITurnoService turnoService;
@@ -36,7 +41,7 @@ class TurnoServiceImplTest {
         TurnoDTO turno = new TurnoDTO();
         turnoService.setPacienteExistente(1L,turno);
         turnoService.setOdontologoExistente(1L,turno);
-        turno.setFechaTurno(LocalDate.of(2003,11,03));
+        turno.setFechaTurno(LocalDateTime.of(2023,11,05,12,12,12));
         turnoService.guardarTurno(turno);
 
         TurnoDTO turnoDTO = turnoService.buscarTurno(1L);
@@ -54,7 +59,7 @@ class TurnoServiceImplTest {
         TurnoDTO turno = new TurnoDTO();
         turnoService.setPacienteExistente(1L,turno);
         turnoService.setOdontologoExistente(1L,turno);
-        turno.setFechaTurno(LocalDate.of(2001,11,01));
+        turno.setFechaTurno(LocalDateTime.of(2023,11,05,12,12,12));
         turnoService.guardarTurno(turno);
 
         Set<TurnoDTO> turnos = turnoService.buscarTurnos();
@@ -66,7 +71,7 @@ class TurnoServiceImplTest {
         TurnoDTO turno = new TurnoDTO();
         turno.setId(1L);
 
-        turno.setFechaTurno(LocalDate.of(2009,11,01));
+        turno.setFechaTurno(LocalDateTime.of(2023,11,05,12,12,12));
         turnoService.actualizarTurno(turno);
 
         TurnoDTO turnoActualizado = turnoService.buscarTurno(1L);

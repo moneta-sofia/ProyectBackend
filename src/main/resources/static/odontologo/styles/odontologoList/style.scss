@@ -91,6 +91,9 @@
 }
 
 #modal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     input{
         border: none;
         border-bottom:gray solid 1px;

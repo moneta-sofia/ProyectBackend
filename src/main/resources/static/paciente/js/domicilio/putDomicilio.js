@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
             provincia: document.querySelector('#provincia').value,
         }
 
-        const url = '/pacientes';
+        const url = '/domicilios' ;
         const settings = {
             method: 'PUT',
             headers:{
@@ -22,6 +22,9 @@ window.addEventListener('load', function () {
 
         fetch(url,settings)
         .then(response => response.json())
+        .then(data => {
+            location.reload();
+        })
     })
 })
 
@@ -55,6 +58,9 @@ function getDomicilio(id){
 function editable() {
     const botonEditar = document.querySelector('#botonEditar');
     botonEditar.style.display = 'none';
+
+    const botonPut = document.querySelector('#botonPut');
+    botonPut.style.display = 'block'
 
     console.log('editable');
 

@@ -13,6 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class OdontologoServiceImplTest {
+
+    //EJECUTAR LOS TEST DE MANERA MANUAL Y EN ORDEN
+
     @Autowired
     IOdontologoService odontologoService;
 

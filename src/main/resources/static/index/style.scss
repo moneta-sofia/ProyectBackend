@@ -64,9 +64,19 @@
                 #turno{
                     background-image: url(../index/img/zyro-image.png);
                     button{
-                        background-color: rgb(139, 139, 139);
-                        color: #3b5975;
-                        border: #3b5975 solid 0.2rem;
+                        background-color: white;
+                        color: #74A5D2;
+                        border: #74A5D2 solid 0.2rem;
+                    }
+                    button:hover{
+                        background-color:white;
+                        color: #8bc2f7;
+                        border: #8bc2f7 solid 0.2rem;
+                    }
+                    button:active{
+                        background-color:rgb(165, 165, 165);
+                        color:#486580;
+                        border:#486580 solid 0.2rem;
                     }
                 }
             

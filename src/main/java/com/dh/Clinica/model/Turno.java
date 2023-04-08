@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 @Entity
 @Getter
@@ -31,7 +33,7 @@ public class Turno implements Serializable {
     @JoinColumn(name = "odontologoId")
     private Odontologo odontologo;
 
-    private LocalDate fechaTurno;
+    private LocalDateTime fechaTurno;
 
 
 }

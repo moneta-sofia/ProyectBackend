@@ -5,15 +5,19 @@ import com.dh.Clinica.model.Paciente;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.cglib.core.Local;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+
 @Getter
 @Setter
 @JsonIgnoreProperties
 public class TurnoDTO implements Serializable{
     private Long id;
-    private LocalDate fechaTurno;
+    private LocalDateTime fechaTurno;
 
     private Paciente paciente;
 

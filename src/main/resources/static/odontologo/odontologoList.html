@@ -49,9 +49,16 @@
 
 
 
-        <div class="modalContainer" class="notShow">
+        <div class="modalContainer">
             <div id="div_odontologo_updating">
                 <div id="modal">
+                    <button type ="button" onclick="cerrar()">&times </button>
+                    <script>
+                        function cerrar() {
+                            const modalContainer = document.querySelector(".modalContainer");
+                            modalContainer.classList.remove('show');
+                        }
+                    </script>
                     <form id="update_odontologo_form">
                         <h2>Actualizar</h2>
                         <div class="form-group">
@@ -74,8 +81,6 @@
                         </div>
                         <div id="botones">
                             <button type="submit">Modificar</button>
-                            <button id="cerrar" onclick="cerrar">Salir</button>
-
                         </div>
                     </form>
         

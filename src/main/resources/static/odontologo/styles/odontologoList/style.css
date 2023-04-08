@@ -84,6 +84,9 @@
 }
 
 #modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
