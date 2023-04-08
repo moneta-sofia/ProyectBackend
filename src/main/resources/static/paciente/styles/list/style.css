@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+}
+* body {
+  font-family: karla;
+}
+* body header {
+  display: flex;
+  background-color: #74A5D2;
+  color: white;
+  padding: 1.4rem;
+}
+* body header #tituloYopciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 100%;
+}
+* body header #tituloYopciones h1 {
+  font-family: Jost;
+}
+* body header #tituloYopciones nav {
+  display: flex;
+  align-items: center;
+}
+* body header #tituloYopciones nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+* body header #tituloYopciones nav a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+* body main {
+  display: flex;
+  width: 100%;
+}
+* body main h1 {
+  margin: 3rem 0 1rem;
+  font-family: Jost;
+  font-size: 3rem;
+  text-align: center;
+}
+* body main #div_paciente_table {
+  width: 100%;
+}
+* body main #div_paciente_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+* body main #div_paciente_table table tr th {
+  background-color: #74A5D2;
+  color: white;
+  font-size: 1.5rem;
+}
+* body main #div_paciente_table table tr td, * body main #div_paciente_table table tr th {
+  text-align: center;
+  padding: 1rem;
+  border-left: 1px solid rgb(187, 187, 187);
+  border-right: 1px solid rgb(187, 187, 187);
+}
+* body main #div_paciente_table table tr td button, * body main #div_paciente_table table tr th button {
+  background-color: transparent;
+  border: none;
+}
+* body main #div_paciente_table table tr:nth-last-child(even) {
+  background-color: rgba(34, 34, 34, 0.071);
+}
+
+#modalContainerUpdate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.313);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#modalContainerDomicilio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.313);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  opacity: 0;
+}
+#modalContainerDomicilio .formModal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 50px black;
+}
+#modalContainerDomicilio .formModal hr {
+  margin: 2rem 0;
+}
+#modalContainerDomicilio .formModal .form-group {
+  margin: 1rem;
+}
+#modalContainerDomicilio .formModal .form-group input {
+  border: none;
+  border-bottom: rgba(0, 0, 0, 0.614) 1px solid;
+}
+#modalContainerDomicilio .formModal .form-group input:focus {
+  outline: none;
+  border-bottom: 1px solid #74A5D2;
+}
+#modalContainerDomicilio .formModal button {
+  margin: 0 1rem;
+  background-color: #74A5D2;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-family: Karla;
+}
+#modalContainerDomicilio .formModal #botonesDomicilio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modalContainerDomicilio .formModal button:hover {
+  filter: brightness(80%);
+}
+#modalContainerDomicilio .formModal button:active {
+  filter: brightness(60%);
+}
+
+#modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 50px black;
+}
+#modal input {
+  border: none;
+  border-bottom: gray solid 1px;
+}
+#modal h2 {
+  text-align: center;
+}
+#modal hr {
+  margin: 0 0 2rem;
+  border-top: #74A5D2 solid 2px;
+}
+#modal .form-group {
+  margin: 2rem;
+}
+#modal #botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal #botones button:hover {
+  filter: brightness(80%);
+}
+#modal #botones button:active {
+  filter: brightness(60%);
+}
+#modal button {
+  margin: 0 1rem;
+  background-color: #74A5D2;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-family: Karla;
+}/*# sourceMappingURL=style.css.map */

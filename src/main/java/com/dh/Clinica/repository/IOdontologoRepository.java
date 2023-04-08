@@ -1,0 +1,10 @@
+package com.dh.Clinica.repository;
+
+import com.dh.Clinica.dto.OdontologoDTO;
+import com.dh.Clinica.model.Odontologo;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IOdontologoRepository extends JpaRepository<Odontologo,Long> {
+}

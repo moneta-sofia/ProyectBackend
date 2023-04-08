@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/postPaciente.js"></script>
+    <link rel="stylesheet" href="styles/alta/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Karla:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Karla:wght@500&display=swap" rel="stylesheet">
+    <title>Pacientes</title>
+</head>
+<body>
+        <header>
+            <div>
+                <img src="img/Logo.png" alt="Logo diente" id="logo">
+            </div>
+            <div id="tituloYopciones">
+                <h1>Clinica odontológica</h1>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="pacienteList.html">Lista pacientes</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div >
+                <h3>Agregar Paciente</h3>
+                <form id="add_new_paciente">
+                    <h2>Datos personales</h2>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text"  id="nombre" placeholder="Ingrese su nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" placeholder="Ingrese su apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" placeholder="Ingrese su dni" name="dni" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" placeholder="Ingrese su correo" name="correo" required>
+                    </div>
+                    <div class="direcc-container">
+                        <hr>
+                        <h2>Direccion</h2>
+                        <div class="form-group">
+                            <label for="calle">Calle:</label>
+                            <input type="text" id="calle" placeholder="Ingrese la calle de su direccion" name="calle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="numero">Numero:</label>
+                            <input type="text" id="numero" placeholder="Ingrese el numero de su direccion" name="numero" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="localidad">Localidad:</label>
+                            <input type="text" id="localidad" placeholder="Ingrese la localidad de su direccion" name="localidad" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="provincia">Provincia:</label>
+                            <input type="text" id="provincia" placeholder="Ingrese la provincia de su direccion" name="provincia" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btn-add-new-paciente" style="display:block">Guardar</button>
+                    
+                    <div id="response" style="display:none"></div>
+                    
+                </form>
+            </div>
+        </main>
+
+        <div class="globoDeInstrumentos">
+            <img src="img/Sin título-1.png" alt="circulo" id="imgUno">
+            <img src="img/2.png" alt="instrumentos de odontologo" id="imgDos">
+        </div>
+    <footer>
+        <p>Proyect made by Sofia Moneta</p>
+    </footer>
+    
+</body>
+</html>
