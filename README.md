@@ -4,8 +4,7 @@ A web application built with Java and SpringBoot following the MVC architecture.
 
 ## Demo
 
-
-![](https://i.imgur.com/RBzOL71.gif)
+![](https://i.imgur.com/7Bv3EDa.gif)
 
 ## Technologies Used
 - Java
