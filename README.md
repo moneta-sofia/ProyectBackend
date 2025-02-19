@@ -2,7 +2,7 @@
 
 A web application built with Java and SpringBoot following the MVC architecture. It includes an API with an H2 in-memory database and a frontend using HTML, CSS, and SCSS.
 
-<hr/>
+##Demo
 
 ![demo](https://i.imgur.com/7Bv3EDa.gif)
 
